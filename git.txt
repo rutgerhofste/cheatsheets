@@ -12,3 +12,7 @@ git remote add origin https://github.com/rutgerhofste/cheatsheets.git
 git push -u origin master
 
 
+Create and switch to new branch
+git branch branchname
+git log --oneline --decorate
+git checkout branchname
