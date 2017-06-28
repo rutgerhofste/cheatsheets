@@ -1,0 +1,14 @@
+Git 
+
+
+Add local repository to github:
+create empty repository on GitHub. 
+
+then on your local machine:
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/rutgerhofste/cheatsheets.git
+git push -u origin master
+
+
