@@ -26,6 +26,10 @@ cleanup
 check containers
 `docker ps -a`
 
+remove all containers
+docker rm $(docker ps -a -q)
+
+
 
 `docker stop <containerID>`
 
