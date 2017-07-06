@@ -27,4 +27,10 @@ $ git merge branchname
 Delete branch:
 git branch -d hotfix
 
+Sync from remote branch 
+git fetch 
+git merge 
+
+git pull = git fetch + git merge
+
 
