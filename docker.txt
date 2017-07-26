@@ -18,7 +18,9 @@ e.g.: `docker tag friendlyhello rutgerhofste/get-started:part1`
 `docker push username/repository:tag`
 
 
+Building images
 
+docker build --no-cache -t <name> <folder with DockerFile>
 
 
 cleanup
@@ -26,10 +28,11 @@ cleanup
 check containers
 `docker ps -a`
 
-remove all containers
+remove all containers Linux
 docker rm $(docker ps -a -q)
 
-
+remove none conatiners Windows
+``FOR /f "tokens=*" %i IN ('docker images -q -f "dangling=true"') DO docker rmi %i``
 
 `docker stop <containerID>`
 
@@ -39,3 +42,10 @@ check images
 `docker images`
 
 `docker rmi <imageID>`
+`docker rmi $(docker images -f dangling=true -q)`
+
+docker system prune
+docker container prune
+docker image prune
+docker network prune
+docker volume prune
