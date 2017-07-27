@@ -28,7 +28,7 @@ Create and switch to new branch
 `git checkout branchname`  
 
 Check HEAD  
-`git log --oneline --decorate`
+`git log --oneline --decorate -n 10`
 
 Merge branch  
 `git checkout master`
