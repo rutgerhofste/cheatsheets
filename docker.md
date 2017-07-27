@@ -1,22 +1,17 @@
 
 # Docker Cheatsheet  
 
-List all images    
-
+List all images   
 `docker images`
 
 Remove an image
 `docker rmi <imageID>`
 
 List all containers  
-
 `docker ps -a`
 
 Remove a container  
 `docker rm -f <containerID>`
-
-
-
 
 Build image  
 `docker build -t <tag> <path to Dockerfile>`
@@ -35,17 +30,13 @@ Run docker with exposed ports (check Dockerfile if ports are exposed)
 Change the name and tag of an image  
 `docker tag image username/repository:tag`
 
-Share repo on hub.docker  
-`docker login`
-
 Upload docker image to DockerHub (Note that image has to have the name username/imagename:tag)  
+`docker login`  
 `docker push username/repository:tag`  
-
 
 Building images
 
-docker build --no-cache -t <name> <folder with DockerFile>
-
+`docker build --no-cache -t <name> <folder with DockerFile>`
 
 Cleanup
 
