@@ -1,5 +1,9 @@
 # tmux shortcuts & cheatsheet
 
+in TMUX, command shortcut:  
+`ctrl-b`  
+
+
 start new:
 
     tmux
