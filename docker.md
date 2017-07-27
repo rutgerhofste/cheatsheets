@@ -48,6 +48,8 @@ remove all containers Linux
 
 remove none images Windows  
 ``FOR /f "tokens=*" %i IN ('docker images -q -f "dangling=true"') DO docker rmi %i``
+remove all images Windows  
+`FOR /f "tokens=*" %i IN ('docker images') DO docker rmi %i`
 
 Newer versions of Docker only: remove unused data    
 `docker system prune`  
