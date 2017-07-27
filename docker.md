@@ -4,7 +4,7 @@
 List all images   
 `docker images`
 
-Remove an image
+Remove an image  
 `docker rmi <imageID>`
 
 List all containers  
@@ -43,15 +43,15 @@ Cleanup
 remove all images Linux
 `docker rmi $(docker images -f dangling=true -q)`
 
-remove all containers Linux
-docker rm $(docker ps -a -q)
+remove all containers Linux  
+`docker rm $(docker ps -a -q)`
 
-remove none images Windows
+remove none images Windows  
 ``FOR /f "tokens=*" %i IN ('docker images -q -f "dangling=true"') DO docker rmi %i``
 
-Newer versions of Docker only: remove unused data  
-`docker system prune`
-`docker container prune`
-`docker image prune`
-`docker network prune`
-`docker volume prune`
+Newer versions of Docker only: remove unused data    
+`docker system prune`  
+`docker container prune`  
+`docker image prune`  
+`docker network prune`  
+`docker volume prune`  
