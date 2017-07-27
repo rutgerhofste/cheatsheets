@@ -40,8 +40,8 @@ Building images
 
 Cleanup
 
-remove all images Linux
-`docker rmi $(docker images -f dangling=true -q)`
+remove all images Linux  
+`docker rmi $(docker images)`
 
 remove all containers Linux  
 `docker rm $(docker ps -a -q)`
