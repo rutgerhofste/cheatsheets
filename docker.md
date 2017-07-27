@@ -1,7 +1,20 @@
-hello world
 
-build docker:
-`docker build -t friendlyhello testDocker`
+# Docker Cheatsheet  
+
+list all images    
+
+`docker images`
+
+list all containers  
+
+`docker ps -a`
+
+Build image  
+`docker build -t <tag> <path to Dockerfile>`
+
+
+
+
 
 `RutgerMacbook:Aqueduct30Docker rutgerhofste$ docker run -d -v /Users/rutgerhofste/GitHub/Aqueduct30Docker/notebooks/:/mnt/notebooks/ -p 8888:8888 eboraas/jupyter`
 
