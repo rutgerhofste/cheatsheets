@@ -1,34 +1,45 @@
 
 # Docker Cheatsheet  
 
-list all images    
+List all images    
 
 `docker images`
 
-list all containers  
+Remove an image
+`docker rmi <imageID>`
+
+List all containers  
 
 `docker ps -a`
+
+Remove a container  
+`docker rm -f <containerID>`
+
+
+
 
 Build image  
 `docker build -t <tag> <path to Dockerfile>`
 
 
+Run image, launch container    
+`docker run <image name(local or remote on DockerHub)>`
 
-
-
-`RutgerMacbook:Aqueduct30Docker rutgerhofste$ docker run -d -v /Users/rutgerhofste/GitHub/Aqueduct30Docker/notebooks/:/mnt/notebooks/ -p 8888:8888 eboraas/jupyter`
-
-
-run docker:
+Run docker with exposed ports (check Dockerfile if ports are exposed)  
 
 `docker run -p 4000:80 friendlyhello`
 
+* Jupyter default 8888
+* JupyterHub default 8000
 
-share repo on hub.docker
-`docker login`
+Change the name and tag of an image  
 `docker tag image username/repository:tag`
-e.g.: `docker tag friendlyhello rutgerhofste/get-started:part1`
-`docker push username/repository:tag`
+
+Share repo on hub.docker  
+`docker login`
+
+Upload docker image to DockerHub (Note that image has to have the name username/imagename:tag)  
+`docker push username/repository:tag`  
 
 
 Building images
@@ -36,29 +47,20 @@ Building images
 docker build --no-cache -t <name> <folder with DockerFile>
 
 
-cleanup
+Cleanup
 
-check containers
-`docker ps -a`
+remove all images Linux
+`docker rmi $(docker images -f dangling=true -q)`
 
 remove all containers Linux
 docker rm $(docker ps -a -q)
 
-remove none conatiners Windows
+remove none images Windows
 ``FOR /f "tokens=*" %i IN ('docker images -q -f "dangling=true"') DO docker rmi %i``
 
-`docker stop <containerID>`
-
-`docker rm <containerID>`
-
-check images
-`docker images`
-
-`docker rmi <imageID>`
-`docker rmi $(docker images -f dangling=true -q)`
-
-docker system prune
-docker container prune
-docker image prune
-docker network prune
-docker volume prune
+Newer versions of Docker only: remove unused data  
+`docker system prune`
+`docker container prune`
+`docker image prune`
+`docker network prune`
+`docker volume prune`
