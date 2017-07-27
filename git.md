@@ -4,7 +4,7 @@ Git
 Add local repository to github:
 create empty repository. 
 
-then on your local machine:
+then on your local machine  
 `git init`  
 `git add README.md`  
 `git commit -m "first commit"`  
@@ -17,7 +17,7 @@ clone a remote repository:
 Work on repo  
 `git status`
 `git add .`  
-`git commit -m "message"`
+`git commit -m "message"`  
 `git push origin master`
 
 Pull from origin  
