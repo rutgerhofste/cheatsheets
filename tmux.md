@@ -1,5 +1,8 @@
 # tmux shortcuts & cheatsheet
 
+If your server is lost or not running, spin it up using:
+`tmux start-server`
+
 in TMUX, command shortcut:  
 `ctrl-b`  
 
