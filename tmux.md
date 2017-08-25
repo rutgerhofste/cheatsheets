@@ -6,6 +6,10 @@ Sessions
 Windows  
 Panes  
 
+you can think of these objects as a tree where each session can have multiple windows and each window can have multiple panes.  
+
+
+
 in TMUX, command shortcut:  
 `ctrl-b`  
 For the commands that start with `ctrl-b` you need to press crtl and b simultaniously, release both and then press the command button.
@@ -43,18 +47,16 @@ For the commands that start with `ctrl-b` you need to press crtl and b simultani
 |horizontal split| `ctrl-b "` |
 |swap panes| `ctrl-b o` |
 |show pane numbers|`ctrl-b q` |
+|kill pane|`ctrl-b x`|
+|break pane into window| 
 
 
 
 
-## <a name="PanesSplits"></a>Panes (splits) 
 
-    %  vertical split
-    "  horizontal split
-    
-    o  swap panes
-    q  show pane numbers
-    x  kill pane
+# Older cheatsheet:  
+
+
     +  break pane into window (e.g. to select text by mouse to copy)
     -  restore pane from window
     ⍽  space - toggle between layouts
