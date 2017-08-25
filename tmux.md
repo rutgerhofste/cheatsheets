@@ -1,13 +1,19 @@
 # tmux shortcuts & cheatsheet
 Variables are indicated by capitalized chars  
 
-The different objects in TMUX (high to low):  
+The different objects in TMUX:  
 Sessions  
 Windows  
 Panes  
 
 you can think of these objects as a tree where each session can have multiple windows and each window can have multiple panes.  
 
+1. Session  
+    1. Window 
+        1. Pane  
+        1. Pane
+    1. Window  
+        1. Pane
 
 
 in TMUX, command shortcut:  
