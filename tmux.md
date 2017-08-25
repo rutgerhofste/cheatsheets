@@ -14,10 +14,17 @@ Panes
 ### list sessions  
 `tmux ls`  
 
-## attach to session  
+### attach to session  
 `tmux attach -t SESSIONNAME`  
 or
 `tmux a #`  
+
+### rename a session  
+`crtl-b $`
+
+# Windows  
+
+### Create new window  
 
 
 If your server is lost or not running, spin it up using:
@@ -27,25 +34,16 @@ in TMUX, command shortcut:
 `ctrl-b`  
 
 
-start new:
 
-    tmux
+    c  create window
+    w  list windows
+    n  next window
+    p  previous window
+    f  find window
+    ,  name window
+    &  kill window
 
-start new with session name:
 
-    tmux new -s myname
-
-attach:
-
-    tmux a  #  (or at, or attach)
-
-attach to named:
-
-    tmux a -t myname
-
-list sessions:
-
-    tmux ls
 
 <a name="killSessions"></a>kill session:
 
@@ -57,21 +55,9 @@ list sessions:
 
 In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+a) and then:
 
-## Sessions
-
-    :new<CR>  new session
-    s  list sessions
-    $  name session
-
 ## <a name="WindowsTabs"></a>Windows (tabs)
 
-    c  create window
-    w  list windows
-    n  next window
-    p  previous window
-    f  find window
-    ,  name window
-    &  kill window
+
 
 ## <a name="PanesSplits"></a>Panes (splits) 
 
