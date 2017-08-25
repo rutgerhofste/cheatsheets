@@ -27,37 +27,23 @@ you need to press the shortcut, release it and then press the command.
 |:---|:---|
 |create window| `ctrl-b c` |
 |list windows| `ctrl-b w` |
+|go to numbered window| `ctrl-b WINDOWNUMBER` |
 |next window| `ctrl-b n` |
 |previous window | `ctrl-b p` |
 |find window | `ctrl-b f` |
+|name window | `ctrl-b ,` |
+|kill window| `ctrl-b &` |
 
 
+# Panes
 
+|  | Command |
+|:---|:---|
+|vertical split| `ctrl-b %` |
+|horizontal split| `ctrl-b "` |
+|swap panes| `ctrl-b o` |
+|show pane numbers|`ctrl-b q` |
 
-
-
-
-    c  create window
-    w  list windows
-    n  next window 
-    p  previous window
-    f  find window
-    ,  name window
-    &  kill window
-
-
-
-<a name="killSessions"></a>kill session:
-
-    tmux kill-session -t myname
-
-<a name="killAllSessions"></a>Kill all the tmux sessions:
-
-    tmux ls | grep : | cut -d. -f1 | awk '{print substr($1, 0, length($1)-1)}' | xargs kill
-
-In tmux, hit the prefix `ctrl+b` (my modified prefix is ctrl+a) and then:
-
-## <a name="WindowsTabs"></a>Windows (tabs)
 
 
 
