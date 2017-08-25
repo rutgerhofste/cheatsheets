@@ -8,23 +8,23 @@ Panes
 
 # Sessions  
 
-### start new session
-`tmux new-session -s SESSIONNAME`
-
-### list sessions  
-`tmux ls`  
-
-### attach to session  
-`tmux attach -t SESSIONNAME`  
-or
-`tmux a #`  
-
-### rename a session  
-`crtl-b $`
+|  | Command |
+|:---|:---|
+|start new session| `tmux new-session -s SESSIONNAME`|
+|list sessions  | `tmux ls`  |
+|attach to session| `tmux attach -t SESSIONNAME` |
+| | `tmux a #`|
+|rename a session |`crtl-b $`|
 
 # Windows  
 
-### Create new window  
+|  | Command |
+|:---|:---|
+|create window| `ctrl-b c` |
+|list windows| `ctrl-b w` |
+|next window| `ctrl-b n` |
+|previous window | `ctrl-b p` |
+|find window | `ctrl-b f` |
 
 
 If your server is lost or not running, spin it up using:
@@ -37,7 +37,7 @@ in TMUX, command shortcut:
 
     c  create window
     w  list windows
-    n  next window
+    n  next window 
     p  previous window
     f  find window
     ,  name window
