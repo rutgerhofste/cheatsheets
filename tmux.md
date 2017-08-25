@@ -1,10 +1,14 @@
 # tmux shortcuts & cheatsheet
 Variables are indicated by capitalized chars  
 
-The different objects in TMUX:  
+The different objects in TMUX (high to low):  
 Sessions  
 Windows  
 Panes  
+
+in TMUX, command shortcut:  
+`ctrl-b`  
+you need to press the shortcut, release it and then press the command.  
 
 # Sessions  
 
@@ -15,6 +19,7 @@ Panes
 |attach to session| `tmux attach -t SESSIONNAME` |
 | | `tmux a #`|
 |rename a session |`crtl-b $`|
+|kill session |`tmux kill-session -t myname`|
 
 # Windows  
 
@@ -27,11 +32,8 @@ Panes
 |find window | `ctrl-b f` |
 
 
-If your server is lost or not running, spin it up using:
-`tmux start-server`
 
-in TMUX, command shortcut:  
-`ctrl-b`  
+
 
 
 
