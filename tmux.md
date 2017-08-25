@@ -1,5 +1,4 @@
 # tmux shortcuts & cheatsheet
-Variables are indicated by capitalized chars  
 
 The different objects in TMUX:  
 Sessions  
@@ -22,6 +21,8 @@ For the commands that start with `ctrl-b` you need to press crtl and b simultani
 
 # Sessions  
 
+Variables are indicated by capitalized chars e.g. SESSIONNAME  
+
 |  | Command |
 |:---|:---|
 |start new session| `tmux new-session -s SESSIONNAME`|
@@ -30,6 +31,7 @@ For the commands that start with `ctrl-b` you need to press crtl and b simultani
 | | `tmux a #`|
 |rename a session |`crtl-b $`|
 |kill session |`tmux kill-session -t myname`|
+|detach | `crtl-b d`|
 
 # Windows  
 
@@ -54,7 +56,7 @@ For the commands that start with `ctrl-b` you need to press crtl and b simultani
 |swap panes| `ctrl-b o` |
 |show pane numbers|`ctrl-b q` |
 |kill pane|`ctrl-b x`|
-|break pane into window| 
+|break pane into window| `crtl-b +`|
 
 
 
