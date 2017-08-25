@@ -23,7 +23,7 @@ In order to close a pane, window or session without keeping it running, just typ
 
 # Sessions  
 
-Variables are indicated by capitalized chars e.g. SESSIONNAME  
+User defined variables are indicated by capitalized chars e.g. SESSIONNAME  
 
 |  | Command |
 |:---|:---|
