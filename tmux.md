@@ -1,4 +1,24 @@
 # tmux shortcuts & cheatsheet
+Variables are indicated by capitalized chars  
+
+The different objects in TMUX:  
+Sessions  
+Windows  
+Panes  
+
+# Sessions  
+
+### start new session
+`tmux new-session -s SESSIONNAME`
+
+### list sessions  
+`tmux ls`  
+
+## attach to session  
+`tmux attach -t SESSIONNAME`  
+or
+`tmux a #`  
+
 
 If your server is lost or not running, spin it up using:
 `tmux start-server`
