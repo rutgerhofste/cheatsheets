@@ -1,4 +1,4 @@
-# tmux shortcuts & cheatsheet
+# TMUX cheatsheet
 
 The different objects in TMUX:  
 Sessions  
