@@ -19,6 +19,8 @@ in TMUX, command shortcut:
 `ctrl-b`  
 For the commands that start with `ctrl-b` you need to press crtl and b simultaniously, release both and then press the command button.
 
+In order to close a pane, window or session without keeping it running, just type `exit`. If you want to keep the pane, window and session running you need to detach.  
+
 # Sessions  
 
 Variables are indicated by capitalized chars e.g. SESSIONNAME  
