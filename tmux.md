@@ -8,7 +8,7 @@ Panes
 
 in TMUX, command shortcut:  
 `ctrl-b`  
-you need to press the shortcut, release it and then press the command.  
+you need to press the shortcut, release it and then press the command (for the commands that do not start with "tmux".)  
 
 # Sessions  
 
