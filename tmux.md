@@ -58,6 +58,8 @@ User defined variables are indicated by capitalized chars e.g. SESSIONNAME
 |swap panes| `ctrl-b o` |
 |show pane numbers|`ctrl-b q` |
 |kill pane|`ctrl-b x`|
+|scroll|`crtl-b [`|
+|exit scrolling| `q` |
 
 
 
